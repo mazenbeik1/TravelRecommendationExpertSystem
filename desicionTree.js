@@ -74,6 +74,66 @@ function NigerianBtn_Clicked()
     document.getElementById("DesicionChoices").appendChild(Choice);
 }
 
+function AsiaBtn_Clicked(){
+    clear();
+
+    //Question
+    let question = document.createElement("div");
+    question.innerText="Which Language";   
+    document.getElementById("DesicionQuestion").appendChild(question);
+
+    //Answers
+    
+    Choice = document.createElement("button");
+    Choice.innerText="Arabic";   
+    Choice.onclick=function(){ArabicAsiaBtn_Clicked()};
+    Choice.className="DesicionTreeChoice";
+    document.getElementById("DesicionChoices").appendChild(Choice);
+
+    
+    Choice = document.createElement("button");
+    Choice.innerText="Turkçe";   
+    Choice.onclick=function(){TurkçeBtn_Clicked()};
+    Choice.className="DesicionTreeChoice";
+    document.getElementById("DesicionChoices").appendChild(Choice);
+}
+
+function TurkçeBtn_Clicked(){
+    clear();
+
+    let question = document.createElement("div");
+    question.innerText="Results";   
+    document.getElementById("DesicionQuestion").appendChild(question);
+    
+    Choice = document.createElement("button");
+    Choice.innerText="Turkiye";
+    Choice.className="DesicionTreeChoice";
+    document.getElementById("DesicionChoices").appendChild(Choice);
+}
+
+function ArabicAsiaBtn_Clicked(){
+    clear();
+
+    let question = document.createElement("div");
+    question.innerText="Results";   
+    document.getElementById("DesicionQuestion").appendChild(question);
+    
+    Choice = document.createElement("button");
+    Choice.innerText="Palestine";
+    Choice.className="DesicionTreeChoice";
+    document.getElementById("DesicionChoices").appendChild(Choice);
+    
+    Choice = document.createElement("button");
+    Choice.innerText="Qatar";
+    Choice.className="DesicionTreeChoice";
+    document.getElementById("DesicionChoices").appendChild(Choice);
+    
+    Choice = document.createElement("button");
+    Choice.innerText="Saudi Arabia";
+    Choice.className="DesicionTreeChoice";
+    document.getElementById("DesicionChoices").appendChild(Choice);
+}
+
 function NoData_Clicked()
 {
     clear();
